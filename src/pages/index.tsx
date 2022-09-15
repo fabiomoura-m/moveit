@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import { CompletedChallenges } from '../componentes/CompletedChallenges';
 import { ExperienceBar } from '../componentes/ExperienceBar';
 import { Profile } from '../componentes/Profile';
 
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
             <section>
                 <div>
                     <Profile />
+                    <CompletedChallenges />
                 </div>
                 <div></div>
             </section>
