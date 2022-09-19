@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import { ChallengeBox } from '../componentes/ChallengeBox';
 import { CompletedChallenges } from '../componentes/CompletedChallenges';
 import { Countdown } from '../componentes/Countdown';
 import { ExperienceBar } from '../componentes/ExperienceBar';
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
                     <CompletedChallenges />
                     <Countdown />
                 </div>
-                <div></div>
+                <div>
+                    <ChallengeBox />
+                </div>
             </section>
         </div>
     );
