@@ -9,6 +9,7 @@ import { GetServerSideProps } from 'next';
 
 import styles from '../styles/pages/Home.module.css';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import Head from 'next/head';
 
 interface HomeProps {
     level: number;
@@ -23,6 +24,10 @@ const Home = (props: HomeProps) => {
             challengesCompleted={props.challengesCompleted}
         >
             <div className={styles.container}>
+                <Head>
+                    <title>Início | move.it</title>
+                </Head>
+
                 <ExperienceBar />
 
                 <CountdownProvider>
